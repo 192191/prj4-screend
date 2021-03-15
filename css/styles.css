@@ -2,19 +2,20 @@
 
 #headerdiv {
 	background-image: url("backgroundheader.jpg");
+	background-size: contain;
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding: 30px;
 	align-content: center;
 }
 #screendtitle {
-	font-family: 'Ranchers', cursive;
+	font-family: 'Anton', sans-serif;
 	font-size: 120px;
 	vertical-align: middle;
 	color:cornflowerblue;
 }
 #logo {
-	align-content: center;
-	width: 400px;
-	height: 380px;
+	max-width: 20%;
+	height:auto;
+	
+	
 }
