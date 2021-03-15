@@ -5,7 +5,8 @@
 	background-size: contain;
 	background-size: cover;
 	background-repeat: no-repeat;
-	
+	text-align: left;
+	display: block;
 }
 #titlediv {
 	text-align: center;
@@ -13,9 +14,15 @@
     font-family: 'Trirong', serif;
 	font-size: 120px;
 	color:cornflowerblue;
+	margin: auto;
+
 }
 
 #logo {
-	max-width: 20%;
+	max-width: 15%;
 	height:auto;
+	position: absolute;
+}
+body {
+	background-color:dimgray;
 }
