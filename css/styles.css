@@ -1,2 +1,17 @@
 * { margin: 0; padding: 0; border: 0; font-size: 100%; }
 
+#headerdiv {
+	background-image: url("backgroundheader.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 30px;
+	align-content: center;
+}
+#screendtitle {
+	font-family: 'Ranchers', cursive;
+	font-size: 120px;
+	vertical-align: top;
+	margin: 350px;
+	color:cornflowerblue;
+	
+}
