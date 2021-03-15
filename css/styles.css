@@ -5,17 +5,15 @@
 	background-size: contain;
 	background-size: cover;
 	background-repeat: no-repeat;
-	align-content: center;
-}
-#screendtitle {
+	text-align: center;
 	font-family: 'Anton', sans-serif;
+    font-family: 'Trirong', serif;
 	font-size: 120px;
-	vertical-align: middle;
 	color:cornflowerblue;
+	
 }
+
 #logo {
 	max-width: 20%;
-	height:auto;
-	
-	
+	height:auto;	
 }
