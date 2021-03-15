@@ -10,6 +10,11 @@
 #screendtitle {
 	font-family: 'Ranchers', cursive;
 	font-size: 120px;
-	vertical-align: top;
+	vertical-align: middle;
 	color:cornflowerblue;
+}
+#logo {
+	align-content: center;
+	width: 400px;
+	height: 380px;
 }
