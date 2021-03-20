@@ -1,5 +1,34 @@
 * { margin: 0; padding: 0; border: 0; font-size: 100%; }
 
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(#F0BB9B, #6A9AEA);
+}
+
+nav, nav a {
+ 	background-color: #154490;
+  	font-size:20px;
+  	word-spacing:5px;
+    font-family: 'Trirong', serif;
+  	color: white !important;
+}
+
+nav a:hover {
+	color:#E27C3F !important;
+  	text-decoration: none;
+}
+
+nav li {
+	padding-left:1em
+}
+
+
 #headerdiv {
 	background-image: url("../images/backgroundheader.jpg");
 	background-size: contain;
@@ -8,40 +37,63 @@
 	text-align: left;
 	display: block;
 	vertical-align: center;
+	border-bottom:10px solid #E27C3F;
 }
+
 
 #titlediv {
 	text-align: center;
-	font-family: 'Anton', sans-serif;
     font-family: 'Trirong', serif;
 	font-size: 120px;
-	color:cornflowerblue;
+	color:#154490;
 	margin: auto;
-
+	text-shadow: 2px 2px #E27C3F;
 }
 
 #logo {
 	max-width: 15%;
 	height:auto;
 	position: absolute;
+  	z-index:1;
 }
-body {
-	background-color: #E8E8E8;
+
+.abouttitle {
+	text-align: center;
+	margin:50px 0px -20px 0px;
+}
+
+.abouttitle h4 {
+	font-family: 'Trirong', serif;
+	font-size:40px;
 }
 
 .aboutsection { 
-	margin-left: 50px;
-	margin-right: 50px; 
+	margin: auto;
+	margin-top:20px;
 	text-align: center;
-	border: 2px solid;
-	padding: 2px;
-
+	border-top:5px solid #E27C3F;
+	padding: 10px 20px 20px 20px;
+	width:50%;
 }
 
-.aboutsection h4 {
-	margin-left: 50px;
-	margin-right: 50px;
-	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 10px;
+.footer {
+ 	background-color: #154490;
+  	width: 100%;
+	position: fixed;
+	display: inline-block;
+	overflow:hidden;
+	bottom:0px;
+}
+
+.footer-inner, .footer-inner a {
+  	text-align: right;
+    font-family: 'Trirong', serif;
+  	color: white;
+  	font-size:14px;
+  	margin:10px;
+}
+
+.footer-inner a:hover {
+	color:#E27C3F;
+  	text-decoration: none;	
 }
