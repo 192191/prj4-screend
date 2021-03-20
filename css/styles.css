@@ -1,7 +1,7 @@
 * { margin: 0; padding: 0; border: 0; font-size: 100%; }
 
 #headerdiv {
-	background-image: url("backgroundheader.jpg");
+	background-image: url("../images/backgroundheader.jpg");
 	background-size: contain;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -9,6 +9,7 @@
 	display: block;
 	vertical-align: center;
 }
+
 #titlediv {
 	text-align: center;
 	font-family: 'Anton', sans-serif;
@@ -28,18 +29,19 @@ body {
 	background-color: #E8E8E8;
 }
 
-h4 {
-	margin-left: 50px;
-	margin-right: 50px;
-	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 10px;
-}
-.container { 
+.aboutsection { 
 	margin-left: 50px;
 	margin-right: 50px; 
 	text-align: center;
 	border: 2px solid;
 	padding: 2px;
 
+}
+
+.aboutsection h4 {
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
