@@ -57,6 +57,49 @@ nav li {
   	z-index:1;
 }
 
+.appsection {
+	margin: auto;
+	margin-top:100px;
+	text-align: center;
+	padding: 10px 20px 100px 20px;
+	width:50%;
+	position: relative;
+	display: block;
+}
+
+.appsection p {	
+	background-color:#E27C3F;
+	padding: 10px;
+	margin-left:150px;
+}
+
+.appsection h2 {	
+	margin-top:100px;
+}
+
+.appimage {
+  	display: block;
+  	width:250px;
+  	float:left;
+	position: relative;
+	padding:0px 30px 0px 0px;
+}
+
+.dlbuttons {
+	padding-left:300px;
+	margin-bottom:100px;
+}
+
+.dlcolumn {
+   	float: left;
+   	width: 40%;
+}
+
+.dlcolumn img {
+	width:75%;
+}
+
+
 .abouttitle {
 	text-align: center;
 	margin:50px 0px -20px 0px;
@@ -74,6 +117,8 @@ nav li {
 	border-top:5px solid #E27C3F;
 	padding: 10px 20px 20px 20px;
 	width:50%;
+	position: relative;
+	display: block;
 }
 
 .footer {
