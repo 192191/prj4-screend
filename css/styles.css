@@ -59,8 +59,7 @@ nav li {
 
 .appsection {
 	margin: auto;
-	margin-top:100px;
-	text-align: center;
+	margin-top:80px;
 	padding: 10px 20px 100px 20px;
 	width:50%;
 	position: relative;
@@ -69,12 +68,15 @@ nav li {
 
 .appsection p {	
 	background-color:#E27C3F;
-	padding: 10px;
+	padding: 20px;
 	margin-left:150px;
+	text-align: left;
+	border-radius:20px;
 }
 
 .appsection h2 {	
-	margin-top:100px;
+	margin:100px 20px 10px 10px;
+	text-align: right;
 }
 
 .appimage {
