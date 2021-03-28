@@ -46,14 +46,11 @@ nav li {
 /* header */
 
 #headerdiv {
-	background-image: url("../images/backgroundheader.jpg");
-	background-size: contain;
-	background-size: cover;
-	background-repeat: no-repeat;
 	text-align: left;
 	display: block;
 	vertical-align: center;
-	border-bottom:10px solid #E27C3F;
+	background-color:#E27C3F;
+	border-bottom:10px solid #C1D37F;
 }
 
 #titlediv {
@@ -61,14 +58,19 @@ nav li {
 	font-size: 120px;
 	color:#154490;
 	margin: auto;
-	text-shadow: 2px 2px #E27C3F;
+	font-family: 'Merriweather', serif;
 }
 
 #logo {
 	max-width: 15%;
-	height:auto;
 	position: absolute;
 	z-index:1;
+}
+
+@media (max-width:800px) {
+	#titlediv {
+		font-size:72px;
+	}
 }
 
 /* app */
@@ -112,15 +114,63 @@ nav li {
 	padding-left:300px;
 	margin-bottom:100px;
 	margin-top:20px;
+	position: relative;
+	display: block;
 }
 
 .dlcolumn {
 	float: left;
-	width: 40%;
+	width: 230px;
 }
 
 .dlcolumn img {
-	width:75%;
+	width:200px;
+}
+
+@media (max-width:1000px) {
+	.appimage {
+		width:200px;
+	}
+}
+
+@media (max-width:800px) {
+	.appimage {
+		display: none;
+	}
+
+	.appsection {
+		text-align:center;
+		width:580px;
+		margin-top:0px;
+	}
+
+	.appsection h2 {
+		text-align:center;
+		font-size:25px;
+		margin-left:30px;
+	}
+
+	.dlbuttons {
+		padding-left:10px;
+		margin-top:20px;
+		margin-left:35px;
+	}
+}
+
+@media (max-width:420px) {
+	.appsection {
+		text-align:center;
+		width:380px;
+	}
+
+	.dlbuttons {
+		padding-left:10px;
+		margin-left:50px;
+	}
+
+	.dlbuttons img {
+		margin-top:10px;
+	}
 }
 
 /* about */
