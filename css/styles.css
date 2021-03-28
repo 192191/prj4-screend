@@ -82,7 +82,7 @@ nav li {
 	}
 }
 
-@media (max-width:420px) {
+@media (max-width:520px) {
 	#titlediv {
 		font-size:48px;
 		text-shadow: 2px 2px 0px #C1D37F;
@@ -182,7 +182,7 @@ nav li {
 	}
 }
 
-@media (max-width:420px) {
+@media (max-width:520px) {
 	#appsection {
 		text-align:center;
 		width:380px;
@@ -229,7 +229,7 @@ nav li {
 	font-style: italic;
 }
 
-@media (max-width:420px) {
+@media (max-width:520px) {
 	#aboutsection {
 		width:350px;
 	}
