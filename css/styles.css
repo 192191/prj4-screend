@@ -1,166 +1,399 @@
+/* basics */
+
 * { margin: 0; padding: 0; border: 0; font-size: 100%; }
 
 html {
-height: 100%;
-}
-body {
-height: 100%;
-margin: 0;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-image: linear-gradient(#F0BB9B, #6A9AEA);
+	position: relative;
+	min-height: 100%;
 }
 
+body {
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: linear-gradient(#F0BB9B, #6A9AEA);
+	margin-bottom: 150px; /* change this to whatever you set the footer height to + 50 */
+	min-height: 400px;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Merriweather', serif;
+}
+
+/* navigation bar */
+
 nav, nav a {
-background-color: #154490;
-font-size:20px;
-word-spacing:5px;
-font-family: 'Trirong', serif;
-color: white !important;
+	background-color: #154490;
+	font-size:20px;
+	word-spacing:5px;
+	font-family: 'Merriweather', serif;
+	color: white !important;
 }
 
 nav a:hover {
-color:#E27C3F !important;
-text-decoration: none;
+	color:#E27C3F !important;
+	text-decoration: underline !important;
+	text-decoration-style: wavy !important;
+	text-decoration-color: #C1D37F !important;
 }
 
 nav li {
-padding-left:1em
+	padding-left:1em
 }
 
+/* header */
+
 #headerdiv {
-background-image: url("../images/backgroundheader.jpg");
-background-size: contain;
-background-size: cover;
-background-repeat: no-repeat;
-text-align: left;
-display: block;
-vertical-align: center;
-border-bottom:10px solid #E27C3F;
+	text-align: left;
+	display: block;
+	vertical-align: center;
+	background-color:#E27C3F;
+	border-bottom:10px solid #C1D37F;
 }
 
 #titlediv {
-text-align: center;
-font-family: 'Trirong', serif;
-font-size: 120px;
-color:#154490;
-margin: auto;
-text-shadow: 2px 2px #E27C3F;
+	text-align: center;
+	font-size: 120px;
+	color:#154490;
+	margin: auto;
+	font-family: 'Merriweather', serif;
+	text-shadow: 4px 4px 0px #C1D37F;
 }
 
 #logo {
-max-width: 15%;
-height:auto;
-position: absolute;
-z-index:1;
+	max-width: 150px;
+	position: absolute;
+	padding:20px;
+	margin:15px 0px 0px 15px;
 }
 
-.appsection {
-margin: auto;
-margin-top:80px;
-padding: 10px 20px 100px 20px;
-width:50%;
-position: relative;
-display: block;
+@media (max-width:800px) {
+	#titlediv {
+		font-size:72px;
+	}
+
+	#logo {
+		margin:0px 0px 40px 0px;
+		width:110px;
+	}
 }
 
-.appsection p {
-background-color:#E27C3F;
-padding: 20px;
-margin-left:150px;
-text-align: left;
-border-radius:20px;
-font-size:15px;
-line-height:170%;
+@media (max-width:520px) {
+	#titlediv {
+		font-size:48px;
+		text-shadow: 2px 2px 0px #C1D37F;
+		padding:10px;
+	}
+
+	#logo {
+		margin:0px 0px 40px 0px;
+		width:100px;
+	}
 }
 
-.appsection h2 {
-margin:100px 20px 10px 10px;
-text-align: right;
+/* app */
+
+#appsection {
+	margin: auto;
+	margin-top:80px;
+	padding: 10px 20px 100px 20px;
+	width:50%;
+	position: relative;
+	display: block;
+}
+
+#appsection p {
+	text-align: left;
+	font-size:15px;
+	line-height:170%;
+}
+
+.apptext {
+	border-radius:20px;
+	background-color:#E27C3F;
+	padding:20px;
+	margin-left:10px;
+}
+
+#appsection h2 {
+	margin:100px 20px 10px 10px;
+	text-align: right;
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	text-decoration-color: #C1D37F;
 }
 
 .appimage {
-display: block;
-width:250px;
-float:left;
-position: relative;
-padding:0px 30px 0px 0px;
+	display: block;
+	width:250px;
+	float:left;
+	position: relative;
+	padding:0px 30px 0px 0px;
 }
 
 .dlbuttons {
-padding-left:300px;
-margin-bottom:100px;
+	padding-left:300px;
+	margin-bottom:100px;
+	margin-top:20px;
+	position: relative;
+	display: block;
 }
 
 .dlcolumn {
-float: left;
-width: 40%;
+	float: left;
+	width: 230px;
 }
 
 .dlcolumn img {
-width:75%;
+	width:200px;
 }
 
+@media (max-width:1000px) {
+	.appimage {
+		width:200px;
+	}
+}
+
+@media (max-width:800px) {
+	.appimage {
+		display: none;
+	}
+
+	#appsection {
+		text-align:center;
+		width:580px;
+		margin-top:0px;
+	}
+
+	#appsection h2 {
+		text-align:center;
+		font-size:25px;
+		margin-left:30px;
+	}
+
+	.dlbuttons {
+		padding-left:10px;
+		margin-top:20px;
+		margin-left:35px;
+	}
+}
+
+@media (max-width:520px) {
+	#appsection {
+		text-align:center;
+		width:380px;
+	}
+
+	.dlbuttons {
+		padding-left:10px;
+		margin-left:50px;
+	}
+
+	.dlbuttons img {
+		margin-top:10px;
+	}
+}
+
+/* about */
+
 .abouttitle {
-text-align: center;
-margin:50px 0px -20px 0px;
+	text-align: center;
+	margin:120px 0px -20px 0px;
 }
 
 .abouttitle h4 {
-font-family: 'Trirong', serif;
-font-size:40px;
+	font-size:40px;
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	text-decoration-color: #C1D37F;
 }
 
-.aboutsection {
-margin: auto;
-margin-top:20px;
-text-align: center;
-border-top:5px solid #E27C3F;
-padding: 10px 20px 20px 20px;
-width:50%;
-position: relative;
-display: block;
+#aboutsection {
+	margin: auto;
+	margin-top:20px;
+	text-align: center;
+	padding: 10px 20px 20px 20px;
+	width:50%;
+	position: relative;
+	display: block;
+	line-height:170%;
 }
+
+#aboutsection h2 {
+	border-bottom:5px solid #E27C3F;
+	margin-top:30px;
+	font-style: italic;
+}
+
+@media (max-width:520px) {
+	#aboutsection {
+		width:350px;
+	}
+
+	#aboutsection h2 {
+		font-size:25px;
+	}
+}
+
+/* testimonials */
+#testimonials-clean {
+	color:#313437;
+	margin-top:200px;
+	margin-bottom:200px;
+
+}
+
+#testimonials-clean h2 {
+	font-weight:bold;
+	margin-bottom:10px;
+	padding-top:40px;
+	width:50%;
+	font-size:40px;
+	display:grid;
+	place-items:center;
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	text-decoration-color: #C1D37F;
+}
+
+@media (max-width:767px) {
+  #testimonials-clean h2 {
+    margin-bottom:5px;
+    padding-top:25px;
+    width:200px;
+    font-size:30px;
+	display:grid;
+	place-items:center;
+  }
+}
+
+#testimonials-clean .intro {
+	font-size:16px;
+	max-width:50%;
+	margin:0 auto;
+	display:grid;
+	place-items:center;
+}
+
+#testimonials-clean .intro p {
+	margin-bottom:0;
+}
+
+#testimonials-clean .people {
+	padding:50px 0 20px;
+}
+
+#testimonials-clean .item {
+	margin-bottom:32px;
+}
+
+@media (min-width:768px) {
+  #testimonials-clean .item {
+  	height:220px;
+  }
+}
+
+#testimonials-clean .item .box {
+	padding:30px;
+	background-color:#eef4f7;
+	position:relative;
+}
+
+#testimonials-clean .item .box:after {
+	content:'';
+	position:absolute;
+	left:30px;
+	bottom:-24px;
+	width:0;
+	height:0;
+	border:15px solid transparent;
+	border-width:12px 15px;
+	border-top-color:#fff;
+}
+
+#testimonials-clean .item .author {
+	margin-top:28px;
+	padding-left:25px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#testimonials-clean .item .name {
+	font-weight:bold;
+	margin-bottom:2px;
+	color:inherit;
+}
+
+#testimonials-clean .item .title {
+	font-size:13px;
+	color:#9da9ae;
+	color:#313437;
+}
+
+#testimonials-clean .item .description {
+	font-size:15px;
+	margin-bottom:0;
+}
+
+#testimonials-clean .item img {
+	max-width:40px;
+	float:left;
+	margin-right:12px;
+	margin-top:-5px;
+}
+
+/* faq */
+
+
+/* footer */
 
 .footer {
-background-color: #154490;
-width: 100%;
-position: fixed;
-display: inline-block;
-overflow:hidden;
-bottom:0px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px; /* Set the fixed height of the footer here */
+	line-height: 60px; /* Vertically center the text there */
+	background-color: #f5f5f5;
 }
 
-.footer-inner, .footer-inner a {
-text-align: right;
-font-family: 'Trirong', serif;
-color: white;
-font-size:14px;
-margin:10px;
+
+/* contact page */
+
+.contacttitle {
+	text-align: center;
+	margin:50px 0px -20px 0px;
 }
 
-.footer-inner a:hover {
-color:#E27C3F;
-text-decoration: none;
+.contacttitle h4 {
+	font-size:40px;
 }
 
 .logos img{
-height: 100px;
+	height: 100px;
 }
 
 .logoalign img, p{
-display: inline;
+	display: inline;
 }
 
 .logoalign p{
-margin-left: 20px;
+	margin-left: 20px;
 }
+
 .maps{
-	position:absolute;
-	margin-left:420px;
-	margin-top:100px;
+	display:grid;
+	place-items:center;
+	padding-top:40px;
+	margin-left:-13%;
 	}
+
 .maps iframe{
 	height: 250px;
-	width: 250px;
-}
+	width: 450px;
+	border:#C1D37F solid 10px;
+	border-radius:20px;
+} 

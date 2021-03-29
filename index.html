@@ -17,6 +17,12 @@
           <link rel="preconnect" href="https://fonts.gstatic.com">
           <link href="https://fonts.googleapis.com/css2?family=Anton&family=Trirong:wght@700&display=swap" rel="stylesheet"> 
 
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-1K31S5BBWT"></script>
           <script>
@@ -39,7 +45,7 @@
 
 <header>
     <div id="headerdiv">
-        <img src="images/Logo.png" alt="Logo for ScreenD" id="logo">
+        <a href="index.html"><img src="images/Logo.png" alt="Logo for ScreenD" id="logo"></a>
           <div id="titlediv">
             <span>ScreenD</span>
           </div>
@@ -55,7 +61,13 @@
                       <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                       </li>
                       <li class="nav-item">
-                      <a class="nav-link" href="#">Other</a>
+                      <a class="nav-link" href="#appsection">App</a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="#aboutsection">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="#testimonials-clean">Testimonials</a>
                       </li>
                       <li class="nav-item">
                       <a class="nav-link" href="contact.html">Contact</a>
@@ -70,39 +82,97 @@
 
 <!-- start of content -->
   <main>
-    <div class="appsection">
+
+    <!-- app -->
+    <div id="appsection">
         <img src="images/appmockup.gif" alt="App Mockup" class="appimage">
-           <h2>About ScreenD and our Mission</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <h2>Get ScreenD Today!</h2>
+          <div class="apptext">
+            <p>Are you tired of not knowing what companies out there are doing with your data? Are you completely done with trying to write down passwords on notes but losing them shortly after? If internet security is important to you but you want it to be as simple as possible, wait no longer: ScreenD is here. Here to save you a headache with our easy-to-use app, everything in one!</p>
+          </div>
+
+        <!-- google/ios dl buttons -->
         <div class="dlbuttons">
           <div class="dlcolumn">
+            <a href="#">
             <img src="images/dlapplestore.png" alt="Apple Store" class="applestore">
+            </a>
           </div>
           <div class="dlcolumn">
+            <a href="#">
             <img src="images/dlgoogleplay.png" alt="Google Play" class="googleplay">
+            </a>
           </div>
         </div>
+
     </div>
 
+    <!-- about -->
     <div class="abouttitle"><h4>Who Are We?</h4></div>
 
-      <div class="aboutsection">
-      	<h2>About ScreenD and our Mission</h2>
-      	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div id="aboutsection">
+        <h2>About ScreenD and our Mission</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
+
+      <!-- testimonials -->
+    <div id="testimonials-clean">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Testimonials</h2>
+                <p class="text-center">Our customers love us! Read what they have to say below.</p>
+            </div>
+            <div class="row people">
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description"><em>"I'm a student and I got hacked once, this app helps me remember more complex passwords which means I get hacked less!"</em></p>
+            <br><br>
+                    </div>
+                    <div class="author">
+                      <img class="rounded-circle" src="images/person2.jpg" alt="Gina Thompson">
+                        <h5 class="name">Gina Thompson</h5>
+                        <p class="title">Psychology Student</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description"><em>"I have worked in IT for three years now and this app helped even me learn about the dangers of apps that gather your data!"</em></p>
+            <br><br>
+                    </div>
+                    <div class="author">
+                      <img class="rounded-circle" src="images/person3.jpg" alt="Carl Kent">
+                        <h5 class="name">Carl Kent</h5>
+                        <p class="title">IT</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description"><em>"I used to download everything I saw online. I got a virus and my son mentioned this app, I downloaded it and they informed me on this topic very well."</em></p>
+                    </div>
+                    <div class="author">
+                      <img class="rounded-circle" src="images/person1.jpg" alt="Emily Verhoeven">
+                        <h5 class="name">Emily Verhoeven</h5>
+                        <p class="title">Spokesperson WWF Netherlands</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- faq -->
 
   </main>
         
 <!-- end of content -->
 
 <!-- start of footer -->
-    <div class="footer">
-            <div class="footer-inner">
-              <p>website made by names here<br>
-                <a href="https://buas.nl/">breda university</a>
-              </p>
-            </div>
-        </div>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+      </div>
+    </footer>
+
 <!-- end of footer -->
 
 <!-- start of scripts -->
