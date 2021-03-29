@@ -372,28 +372,34 @@ nav li {
 	font-size:40px;
 }
 
-.logos img{
+.logos img {
 	height: 100px;
 }
 
-.logoalign img, p{
+.logoalign img, p {
 	display: inline;
 }
 
-.logoalign p{
+.logoalign p {
 	margin-left: 20px;
 }
 
-.maps{
+.maps {
 	display:grid;
 	place-items:center;
 	padding-top:40px;
 	margin-left:-13%;
-	}
+}
 
-.maps iframe{
+.maps iframe {
 	height: 250px;
 	width: 450px;
 	border:#C1D37F solid 10px;
 	border-radius:20px;
 } 
+
+@media (max-width:520px) {
+	.maps {
+		margin-left:0;
+	}
+}
