@@ -155,3 +155,12 @@ display: inline;
 .logoalign p{
 margin-left: 20px;
 }
+.maps{
+	position:absolute;
+	margin-left:420px;
+	margin-top:100px;
+	}
+.maps iframe{
+	height: 250px;
+	width: 250px;
+}
