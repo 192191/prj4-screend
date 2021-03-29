@@ -402,4 +402,9 @@ nav li {
 	.maps {
 		margin-left:0;
 	}
+
+	.maps iframe {
+		width: 300px;
+		height: 200px;
+	}
 }
