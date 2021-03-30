@@ -347,6 +347,14 @@ nav li {
 }
 
 /* faq */
+.faq {
+	text-align: center;
+	font-size: 64px;
+}
+.faqcontent {
+	margin-left: 350px;
+	margin-right: 350px;
+}
 
 
 /* footer */
