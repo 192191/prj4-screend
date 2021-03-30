@@ -390,6 +390,24 @@ nav li {
 	line-height:170%;
 }
 
+#privacysection {
+	margin: auto;
+	margin-top:20px;
+	text-align: center;
+	padding: 10px 20px 20px 20px;
+	width:50%;
+	position: relative;
+	display: block;
+	line-height:170%;
+}
+#privacysection h2 {
+	text-align: center;
+	margin:100px 0px -20px 0px;
+	font-size:40px;
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	text-decoration-color: #C1D37F;
+}
 
 
 
