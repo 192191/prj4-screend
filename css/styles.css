@@ -368,6 +368,39 @@ nav li {
 	background-color: #f5f5f5;
 }
 
+/* disclaimer */
+
+.disclaimertitle {
+	text-align: center;
+	margin:120px 0px -20px 0px;
+}
+
+
+.disclaimertitle h4 {
+	font-size:40px;
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	text-decoration-color: #C1D37F;
+}
+
+#disclaimersection {
+	margin: auto;
+	margin-top:20px;
+	text-align: center;
+	padding: 10px 20px 20px 20px;
+	width:50%;
+	position: relative;
+	display: block;
+	line-height:170%;
+}
+
+
+
+
+
+
+
+
 
 /* contact page */
 
@@ -416,3 +449,6 @@ nav li {
 		height: 200px;
 	}
 }
+
+
+ 
