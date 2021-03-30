@@ -379,8 +379,15 @@ nav li {
 	text-decoration-color: #C1D37F;
 }
 
-.disclaimersection h4 {
-	
+#disclaimersection {
+	margin: auto;
+	margin-top:20px;
+	text-align: center;
+	padding: 10px 20px 20px 20px;
+	width:50%;
+	position: relative;
+	display: block;
+	line-height:170%;
 }
 
 
