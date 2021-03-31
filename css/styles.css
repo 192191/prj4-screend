@@ -427,6 +427,16 @@ button.navbar-toggler {
 	line-height:170%;
 }
 
+#disclaimersection a, #privacysection a {
+	color:white;
+	font-style:italic;
+}
+
+#disclaimersection a:hover, #privacysection a:hover {
+	text-decoration:none;
+	color:#C1D37F;
+}
+
 .privacytitle {
 	text-align: center;
 	margin:100px 0px -20px 0px;
@@ -448,6 +458,12 @@ button.navbar-toggler {
 	line-height:170%;
 }
 
+@media (max-width:720px) {
+
+	#privacysection, #disclaimersection {
+		width:90%;
+	}
+} 
 
 /* footer */
 
@@ -467,7 +483,7 @@ button.navbar-toggler {
 }
 
 .site-footer h6 {
-	color:#C1D37F;
+	color:#212529;
 	font-size:23px;
 	font-weight:bold;
 	text-transform:uppercase;
