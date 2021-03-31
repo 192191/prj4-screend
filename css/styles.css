@@ -373,9 +373,9 @@ nav li {
 }
 
 .footer-basic {
-  padding:40px 0;
-  background-color:#ffffff;
-  color:#4b4c4d;
+	padding:40px 0;
+	background-color:#ffffff;
+	color:#4b4c4d;
 }
 
 .footer-basic ul {
@@ -479,6 +479,9 @@ nav li {
 
 .contacttitle h4 {
 	font-size:40px;
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	text-decoration-color: #C1D37F;
 }
 
 .logos img {
