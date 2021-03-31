@@ -5,6 +5,7 @@
 html {
 	position: relative;
 	height: 100%;
+	overflow-x: hidden;
 }
 
 body {
@@ -14,6 +15,7 @@ body {
 	background-image: linear-gradient(#F0BB9B, #6A9AEA);
 	margin-bottom: 150px; /* change this to whatever you set the footer height to + 50 */
 	height:100%;
+	overflow-x: hidden;
 }
 
 p {
@@ -28,6 +30,10 @@ h2 {
 	text-decoration: underline;
 	text-decoration-style: wavy;
 	text-decoration-color: #C1D37F;
+}
+
+a {
+	color: #E27C3F;
 }
 
 /* navigation bar */
@@ -51,6 +57,11 @@ nav li {
 	padding-left:1em
 }
 
+button.navbar-toggler {
+	border:none;
+	padding:5px;
+}
+
 /* header */
 
 #headerdiv {
@@ -59,6 +70,7 @@ nav li {
 	vertical-align: center;
 	background-color:#E27C3F;
 	border-bottom:10px solid #C1D37F;
+	position: relative;
 }
 
 #titlediv {
@@ -348,17 +360,16 @@ nav li {
 }
 
 /* faq */
-.faq {
+#faq {
 	text-align: center;
 	font-size: 64px;
 	margin:30px auto;
-	text-align: center;
 }
 .faqcontent {
 	margin:30px auto;
 	line-height:170%;
 	width: 45%;
-	padding-bottom:10px;
+	padding-bottom:130px;
 }
 
 .faq-question {
@@ -393,47 +404,6 @@ nav li {
 		width:90%;
 	}
 } 
-
-/* footer */
-
-.footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 100px; /* Set the fixed height of the footer here */
-	line-height: 60px; /* Vertically center the text there */
-	background-color: #f5f5f5;
-}
-
-.footer-basic {
-	padding:40px 0;
-	background-color:#ffffff;
-	color:#4b4c4d;
-}
-
-.footer-basic ul {
-  padding:0;
-  list-style:none;
-  text-align:center;
-  font-size:18px;
-  line-height:1.6;
-  margin-bottom:0;
-}
-
-.footer-basic li {
-  padding:0 10px;
-}
-
-.footer-basic ul a {
-  color:inherit;
-  text-decoration:none;
-  opacity:0.8;
-}
-
-.footer-basic ul a:hover {
-  opacity:1;
-}
-
 
 /* disclaimer */
 
@@ -477,6 +447,95 @@ nav li {
 	display: block;
 	line-height:170%;
 }
+
+
+/* footer */
+
+.site-footer {
+	padding:45px 0 20px;
+	font-size:15px;
+	line-height:24px;
+	color:white;
+	font-family: 'Open Sans', sans-serif;
+	background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(21,68,144,0.8));
+	border-top:10px solid #C1D37F;
+}
+
+.site-footer hr {
+	border-top-color:#bbb;
+	opacity:0.5
+}
+
+.site-footer h6 {
+	color:#C1D37F;
+	font-size:23px;
+	font-weight:bold;
+	text-transform:uppercase;
+	margin-top:5px;
+	letter-spacing:5px
+}
+	
+.site-footer a:hover {
+	text-decoration:none;	
+	color:#C1D37F;
+}
+
+.footer-links {
+	padding-left:0;
+	list-style:none
+}
+
+.footer-links li {
+	display:block
+}
+
+.footer-links a {
+	color:white;
+}
+
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover {
+	color:#E27C3F;
+	text-decoration:none;
+}
+
+.footer-links.inline li {
+	display:inline-block
+}
+
+.site-footer .social-icons {
+	text-align:right
+}
+
+.site-footer .social-icons a {
+	width:40px;
+	height:40px;
+	line-height:40px;
+	margin-left:6px;
+	margin-right:0;
+	border-radius:100%;
+	background-color:#C1D37F;
+}
+
+.copyright-text {
+	margin:0
+}
+
+@media (max-width:991px) {
+  .site-footer [class^=col-] {
+    margin-bottom:30px
+  }
+}
+
+@media (max-width:767px) {
+  .site-footer  {
+    padding-bottom:0
+  }
+
+  .site-footer .copyright-text,.site-footer .social-icons  {
+    text-align:center
+  }
+}
+
 
 /* contact page */
 
