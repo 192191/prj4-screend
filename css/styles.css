@@ -348,12 +348,18 @@ nav li {
 .faq {
 	text-align: center;
 	font-size: 64px;
+	border-bottom:5px solid #E27C3F;
+	margin-top:30px;
+	width:350px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
 }
 .faqcontent {
 	margin-left: 350px;
 	margin-right: 350px;
 }
-
 
 /* footer */
 
