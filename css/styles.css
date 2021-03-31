@@ -1,10 +1,10 @@
 /* basics */
 
-* { margin: 0; padding: 0; border: 0; font-size: 100%; }
+* { margin: 0; padding: 0; border: 0; font-size: 100%; box-sizing: border-box;}
 
 html {
 	position: relative;
-	min-height: 100%;
+	height: 100%;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 	background-attachment: fixed;
 	background-image: linear-gradient(#F0BB9B, #6A9AEA);
 	margin-bottom: 150px; /* change this to whatever you set the footer height to + 50 */
-	min-height: 400px;
+	height:100%;
 }
 
 p {
@@ -22,6 +22,12 @@ p {
 
 h1, h2, h3, h4, h5 {
 	font-family: 'Merriweather', serif;
+}
+
+h2 {
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	text-decoration-color: #C1D37F;
 }
 
 /* navigation bar */
@@ -60,8 +66,8 @@ nav li {
 	font-size: 120px;
 	color:#154490;
 	margin: auto;
-	font-family: 'Merriweather', serif;
 	text-shadow: 4px 4px 0px #C1D37F;
+	font-family: 'Merriweather', serif;
 }
 
 #logo {
@@ -122,9 +128,6 @@ nav li {
 #appsection h2 {
 	margin:100px 20px 10px 10px;
 	text-align: right;
-	text-decoration: underline;
-	text-decoration-style: wavy;
-	text-decoration-color: #C1D37F;
 }
 
 .appimage {
@@ -202,12 +205,11 @@ nav li {
 
 .abouttitle {
 	text-align: center;
-	margin:60px;
+	margin-top:100px;
 }
 
 .abouttitle h4 {
 	font-size:3em;
-	margin-bottom:50px;
 }
 
 #aboutsection {
@@ -221,9 +223,8 @@ nav li {
 	line-height:170%;
 }
 
-#aboutsection h2 {
+#aboutsection h4 {
 	border-bottom:5px solid #E27C3F;
-	margin-top:30px;
 	font-style: italic;
 }
 
@@ -250,12 +251,8 @@ nav li {
 	margin-bottom:10px;
 	padding-top:40px;
 	width:50%;
-	font-size:40px;
 	display:grid;
 	place-items:center;
-	text-decoration: underline;
-	text-decoration-style: wavy;
-	text-decoration-color: #C1D37F;
 }
 
 @media (max-width:767px) {
@@ -297,8 +294,12 @@ nav li {
 
 #testimonials-clean .item .box {
 	padding:30px;
-	background-color:#eef4f7;
+	background-color:#E27C3F;
+	opacity:0.9;
 	position:relative;
+	border-radius:10px;
+	border-right:5px solid #C1D37F;
+	border-top:5px solid #C1D37F;
 }
 
 #testimonials-clean .item .box:after {
@@ -310,7 +311,7 @@ nav li {
 	height:0;
 	border:15px solid transparent;
 	border-width:12px 15px;
-	border-top-color:#fff;
+	border-top-color:#E27C3F;
 }
 
 #testimonials-clean .item .author {
@@ -335,6 +336,7 @@ nav li {
 #testimonials-clean .item .description {
 	font-size:15px;
 	margin-bottom:0;
+	color:white;
 }
 
 #testimonials-clean .item img {
@@ -348,17 +350,14 @@ nav li {
 .faq {
 	text-align: center;
 	font-size: 64px;
-	border-bottom:5px solid #E27C3F;
-	margin-top:30px;
+	margin:30px auto;
 	width:350px;
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 30px;
+	border-bottom:5px solid #E27C3F;
 }
 .faqcontent {
-	margin-left: 350px;
-	margin-right: 350px;
+	margin: 50px 350px;
+	line-height:170%;
 }
 
 /* footer */
@@ -424,9 +423,6 @@ nav li {
   opacity:0.9;
 }
 
-
-
-
 /* disclaimer */
 
 .disclaimertitle {
@@ -472,58 +468,57 @@ nav li {
 
 /* contact page */
 
-.contacttitle {
-	text-align: center;
-	margin:50px 0px -20px 0px;
+.contact-container {
+	padding:100px 0px;
 }
 
-.contacttitle h4 {
-	font-size:40px;
-	text-decoration: underline;
-	text-decoration-style: wavy;
-	text-decoration-color: #C1D37F;
+.contacttitle {
+	text-align: center;
+}
+
+.logos {	
+	position:relative;
+	margin-left:27%;
+	margin-top:50px;
+}
+
+.logos p {
+	font-weight:bold;
 }
 
 .logos img {
-	height: 100px;
+	padding:5px;
+	height:100px;
 }
 
-.logoalign img, p {
-	display: inline;
+.logosalign {
+	display:inline-block;
+	text-align:center;
+	margin-right:50px;
 }
 
-.logoalign p {
-	margin-left: 20px;
-}
 
 .maps {
 	display:grid;
 	place-items:center;
-	padding-top:40px;
-	margin-left:-13%;
+	padding:40px 0px;
 }
 
 .maps iframe {
 	height: 250px;
 	width: 450px;
-	border:orange solid 5px;
+	border:5px solid #E27C3F;
 	border-radius:20px;
 } 
 
-@media (max-width:520px) {
-	.maps {
-		margin-left:0;
-	}
+@media (max-width:720px) {
 
 	.maps iframe {
 		width: 300px;
 		height: 200px;
 	}
-} 
 
-.map-align{
-	display:inline;
-	position:absolute;
-	left:50px;
-	top:500px;
-}
+	.logos p {		
+		width:100px;
+	}
+} 
