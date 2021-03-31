@@ -202,14 +202,12 @@ nav li {
 
 .abouttitle {
 	text-align: center;
-	margin:120px 0px -20px 0px;
+	margin:60px;
 }
 
 .abouttitle h4 {
-	font-size:40px;
-	text-decoration: underline;
-	text-decoration-style: wavy;
-	text-decoration-color: #C1D37F;
+	font-size:3em;
+	margin-bottom:50px;
 }
 
 #aboutsection {
@@ -499,7 +497,7 @@ nav li {
 .maps iframe {
 	height: 250px;
 	width: 450px;
-	border:#C1D37F solid 10px;
+	border:orange solid 5px;
 	border-radius:20px;
 } 
 
@@ -513,3 +511,10 @@ nav li {
 		height: 200px;
 	}
 } 
+
+.map-align{
+	display:inline;
+	position:absolute;
+	left:50px;
+	top:500px;
+}
