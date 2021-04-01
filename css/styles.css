@@ -68,9 +68,10 @@ button.navbar-toggler {
 	text-align: left;
 	display: block;
 	vertical-align: center;
-	background-color:#E27C3F;
 	border-bottom:10px solid #C1D37F;
 	position: relative;
+	background-image: url(../images/patternbg.jpg);
+	background-repeat: repeat-x; 
 }
 
 #titlediv {
@@ -78,7 +79,7 @@ button.navbar-toggler {
 	font-size: 120px;
 	color:#154490;
 	margin: auto;
-	text-shadow: 4px 4px 0px #C1D37F;
+	text-shadow: 4px 4px 0 #C1D37F, 2px 2px 5px #000;
 	font-family: 'Merriweather', serif;
 }
 
@@ -607,5 +608,9 @@ button.navbar-toggler {
 
 	.logos p {		
 		width:100px;
+	}
+
+	.logos {		
+		margin-left:23%;	
 	}
 } 
