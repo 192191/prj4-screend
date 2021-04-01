@@ -6,6 +6,7 @@ html {
 	position: relative;
 	height: 100%;
 	overflow-x: hidden;
+	margin:0;
 }
 
 body {
@@ -35,6 +36,13 @@ h2 {
 a {
 	color: #E27C3F;
 }
+
+main {
+	min-height: 100%;
+	padding: 20px;
+	padding-bottom: 50px;
+}
+
 
 /* navigation bar */
 
@@ -470,6 +478,7 @@ button.navbar-toggler {
 
 .site-footer {
 	padding:45px 0 20px;
+	margin-top: -50px;
 	font-size:15px;
 	line-height:24px;
 	color:white;
