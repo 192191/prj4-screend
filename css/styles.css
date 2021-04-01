@@ -614,3 +614,42 @@ button.navbar-toggler {
 		margin-left:23%;	
 	}
 } 
+
+/* justification page */
+
+.just-title {
+	text-align: center;
+	margin:100px 0px -20px 0px;
+	font-size:40px;
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	text-decoration-color: #C1D37F;
+}
+
+.just-container {
+	margin: auto;
+	margin-top:20px;
+	text-align: left;
+	padding: 10px 20px 100px 20px;
+	width:50%;
+	position: relative;
+	display: block;
+	line-height:170%;
+}
+
+.just-container a {
+	color:white;
+	font-style:italic;
+}
+
+.just-container a:hover {
+	text-decoration:none;
+	color:#C1D37F;
+}
+
+@media (max-width:720px) {
+
+	.just-container {
+		width:90%;
+	}
+} 
