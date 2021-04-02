@@ -688,6 +688,10 @@ button.navbar-toggler {
     display: inline-block;
 }
 
+.rest-wrap {
+	padding:50px 0px;
+}
+
 @media (max-width:720px) {
 
 	.just-container {
