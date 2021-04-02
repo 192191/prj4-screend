@@ -629,7 +629,11 @@ button.navbar-toggler {
 .just-title {
 	text-align: center;
 	margin:100px 0px -20px 0px;
+	padding-bottom:50px;
 	font-size:40px;
+}
+
+.just-title h2 {
 	text-decoration: underline;
 	text-decoration-style: wavy;
 	text-decoration-color: #C1D37F;
@@ -656,9 +660,62 @@ button.navbar-toggler {
 	color:#C1D37F;
 }
 
+.navflowchart-text {
+	padding-bottom:40px;
+}
+
+.prototype-text {
+	padding:100px;
+}
+
+.just-wrap1 {
+	float: right;
+	margin: 10px;
+	padding: 10px;
+	height: 300px;
+}
+
+.just-wrap2 {
+	float: left;
+	clear: right;
+	margin: 10px;
+	padding: 20px;
+	height: 250px;
+}
+
+.just-wrap3 {
+	padding:20px 0px 50px 120px;
+    display: inline-block;
+}
+
 @media (max-width:720px) {
 
 	.just-container {
 		width:90%;
 	}
+
+	.prototype-text {
+		padding:25px;
+	}
+
+	.just-wrap2 {
+		padding: 5px;
+	}
+
+	.just-wrap3 {
+		padding:5px 5px 30px 5px;
+	    display: inline-block;
+	    width:165px;
+	}
 } 
+
+@media (max-width:1100px) {
+	.prototype-text {
+		padding:50px 5px 50px 10px;
+	}
+
+	.just-wrap2 {
+		padding: 0px;
+	}
+}
+
