@@ -650,6 +650,10 @@ button.navbar-toggler {
 	line-height:170%;
 }
 
+.just-container h4,h5 {
+	padding:10px 0px;
+}
+
 .just-container a {
 	color:white;
 	font-style:italic;
@@ -665,7 +669,7 @@ button.navbar-toggler {
 }
 
 .prototype-text {
-	padding:100px;
+	padding:80px;
 }
 
 .just-wrap1 {
